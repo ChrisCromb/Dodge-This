@@ -1,0 +1,145 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3313279504431105749
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3313279504431105748}
+  - component: {fileID: 3313279504431105755}
+  - component: {fileID: -8148890975031182893}
+  m_Layer: 0
+  m_Name: SettingsData
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3313279504431105748
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3313279504431105749}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3313279504431105755
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3313279504431105749}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3bd8b77248b7d346bf7dce7b1625a62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  musicVol: 1
+  sfxVol: 1
+  musicSlider: {fileID: 0}
+  sfxSlider: {fileID: 0}
+  newScene: 0
+  highscore: 0
+  unlockedLevel: 1
+  skinsUnlocked: 000000000000000000000000000000000000000000000000000000
+  trailsUnlocked: 000000000000000000000000000000000000000000000000000000
+  shipSprites:
+  - {fileID: -7630756762268151150, guid: e1fb1a99c9c4fad43985f8f5b1548a1c, type: 3}
+  - {fileID: -2853155375443558968, guid: e1fb1a99c9c4fad43985f8f5b1548a1c, type: 3}
+  - {fileID: -5871688701202876650, guid: e1fb1a99c9c4fad43985f8f5b1548a1c, type: 3}
+  - {fileID: 1764576516356325869, guid: e1fb1a99c9c4fad43985f8f5b1548a1c, type: 3}
+  - {fileID: 8388200452796809480, guid: e1fb1a99c9c4fad43985f8f5b1548a1c, type: 3}
+  - {fileID: -6515345626042970666, guid: e1fb1a99c9c4fad43985f8f5b1548a1c, type: 3}
+  - {fileID: 355599407890038201, guid: e1fb1a99c9c4fad43985f8f5b1548a1c, type: 3}
+  - {fileID: 6608718206512058624, guid: e1fb1a99c9c4fad43985f8f5b1548a1c, type: 3}
+  - {fileID: 7660354608259533632, guid: e1fb1a99c9c4fad43985f8f5b1548a1c, type: 3}
+  - {fileID: -2106549605937246352, guid: e1fb1a99c9c4fad43985f8f5b1548a1c, type: 3}
+  - {fileID: 6101082278216754325, guid: e1fb1a99c9c4fad43985f8f5b1548a1c, type: 3}
+  - {fileID: -6423862894928610180, guid: e1fb1a99c9c4fad43985f8f5b1548a1c, type: 3}
+  - {fileID: -6680034686249979094, guid: e1fb1a99c9c4fad43985f8f5b1548a1c, type: 3}
+  - {fileID: 1110896930209935956, guid: e1fb1a99c9c4fad43985f8f5b1548a1c, type: 3}
+  - {fileID: 101229431281470835, guid: e1fb1a99c9c4fad43985f8f5b1548a1c, type: 3}
+  - {fileID: 2985879900165464463, guid: e1fb1a99c9c4fad43985f8f5b1548a1c, type: 3}
+  - {fileID: 2895537661695942636, guid: e1fb1a99c9c4fad43985f8f5b1548a1c, type: 3}
+  - {fileID: 4190717118682423482, guid: e1fb1a99c9c4fad43985f8f5b1548a1c, type: 3}
+  - {fileID: -990661175823160281, guid: e1fb1a99c9c4fad43985f8f5b1548a1c, type: 3}
+  - {fileID: 2881539713409462284, guid: e1fb1a99c9c4fad43985f8f5b1548a1c, type: 3}
+  - {fileID: -1220510999428137142, guid: e1fb1a99c9c4fad43985f8f5b1548a1c, type: 3}
+  - {fileID: -6388340326049948663, guid: e1fb1a99c9c4fad43985f8f5b1548a1c, type: 3}
+  - {fileID: -1849587485161164060, guid: e1fb1a99c9c4fad43985f8f5b1548a1c, type: 3}
+  - {fileID: -6130513634967469676, guid: e1fb1a99c9c4fad43985f8f5b1548a1c, type: 3}
+  - {fileID: -5495805304562603152, guid: e1fb1a99c9c4fad43985f8f5b1548a1c, type: 3}
+  - {fileID: 1977516477004506687, guid: e1fb1a99c9c4fad43985f8f5b1548a1c, type: 3}
+  - {fileID: 3741440052712317304, guid: e1fb1a99c9c4fad43985f8f5b1548a1c, type: 3}
+  shipTrails:
+  - {fileID: 2525634359359120742, guid: 85f21a10590198b43b8d51886d7f1a20, type: 3}
+  - {fileID: 1653505373143449489, guid: b1ddc18dc283ce24cb8b45f7ab51971c, type: 3}
+  - {fileID: 2685604484589957725, guid: 4269a786b415fad418ca6bec85fe7de4, type: 3}
+  - {fileID: 8701357369070630265, guid: 3d7adbf6a5425b845b9fc1254bf9b34e, type: 3}
+  - {fileID: 6791812477030239229, guid: 25be6fe75f34208438d859527cc1cff7, type: 3}
+  - {fileID: 5923281330628575935, guid: b963a56e527dbc34484a5898a1f92ddd, type: 3}
+  - {fileID: 1278297453060886874, guid: d101b1434b21fe0429c15889654af4be, type: 3}
+  - {fileID: 3020003943668413802, guid: d53c627cc77c2e347ae3f663babb825d, type: 3}
+  - {fileID: 110378078871949325, guid: e3c0ecc3de221ff459dc9a5153ff0cea, type: 3}
+  - {fileID: 110378078871949325, guid: fafed9935326d1b4bbe8d8830802e50f, type: 3}
+  - {fileID: 5760776169337275583, guid: 6172e8582ffba094384301e0f01211ac, type: 3}
+  - {fileID: 2525634359359120742, guid: 85f21a10590198b43b8d51886d7f1a20, type: 3}
+  - {fileID: 2525634359359120742, guid: 85f21a10590198b43b8d51886d7f1a20, type: 3}
+  - {fileID: 2525634359359120742, guid: 85f21a10590198b43b8d51886d7f1a20, type: 3}
+  - {fileID: 2525634359359120742, guid: 85f21a10590198b43b8d51886d7f1a20, type: 3}
+  - {fileID: 2525634359359120742, guid: 85f21a10590198b43b8d51886d7f1a20, type: 3}
+  - {fileID: 2525634359359120742, guid: 85f21a10590198b43b8d51886d7f1a20, type: 3}
+  - {fileID: 2525634359359120742, guid: 85f21a10590198b43b8d51886d7f1a20, type: 3}
+  - {fileID: 2525634359359120742, guid: 85f21a10590198b43b8d51886d7f1a20, type: 3}
+  - {fileID: 2525634359359120742, guid: 85f21a10590198b43b8d51886d7f1a20, type: 3}
+  - {fileID: 5760776169337275583, guid: 27187bf5e1e4ad24fba9549256b46ffa, type: 3}
+  - {fileID: 2525634359359120742, guid: 85f21a10590198b43b8d51886d7f1a20, type: 3}
+  - {fileID: 2525634359359120742, guid: 85f21a10590198b43b8d51886d7f1a20, type: 3}
+  - {fileID: 2525634359359120742, guid: 85f21a10590198b43b8d51886d7f1a20, type: 3}
+  - {fileID: 2525634359359120742, guid: 85f21a10590198b43b8d51886d7f1a20, type: 3}
+  - {fileID: 2525634359359120742, guid: 85f21a10590198b43b8d51886d7f1a20, type: 3}
+  - {fileID: 2525634359359120742, guid: 85f21a10590198b43b8d51886d7f1a20, type: 3}
+  shipMaterials:
+  - {fileID: 2100000, guid: 7cfa5684a98f825439bc7294f7b4265d, type: 2}
+  - {fileID: 2100000, guid: 24ebb9b3de311a047b7fd9e586bcf940, type: 2}
+  skinSelected: 0
+  trailSelected: 0
+  smallSDefeated: 0
+  mediumSDefeated: 0
+  largeSDefeated: 0
+  highscoreText: {fileID: 0}
+  levelUnlockedText: {fileID: 0}
+  musicVolText: {fileID: 0}
+  sfxVolText: {fileID: 0}
+  menuMusic: {fileID: 0}
+--- !u!114 &-8148890975031182893
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3313279504431105749}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ca771d6693b6a8449961203a7b87cd1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  endlessL: 0
+  endlessR: 1
+  endlessC: 0
+  selectedLevel: 0
+  timeFactor: 1
+  activeL: 0
+  activeR: 0
+  activeC: 0
+  randomSide: 0
