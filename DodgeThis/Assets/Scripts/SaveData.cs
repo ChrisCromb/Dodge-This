@@ -16,6 +16,7 @@ public class SaveData
     public int smallSDefeated = 0;
     public int mediumSDefeated = 0;
     public int largeSDefeated = 0;
+    public int endlessPlayed = 0;
 
     public SaveData(EnemySpawner es, UIController uic, LevelData ld, SettingsData sd)
     {
@@ -52,6 +53,7 @@ public class SaveData
         smallSDefeated = sd.smallSDefeated;
         mediumSDefeated = sd.mediumSDefeated;
         largeSDefeated = sd.largeSDefeated;
+        endlessPlayed = sd.endlessPlayed;
     }
 
     public SaveData(int hs, int ul, SettingsData sd) //Save only audio settings and skins
@@ -75,6 +77,7 @@ public class SaveData
         smallSDefeated = sd.smallSDefeated;
         mediumSDefeated = sd.mediumSDefeated;
         largeSDefeated = sd.largeSDefeated;
+        endlessPlayed = sd.endlessPlayed;
     }
 
     public SaveData()
@@ -90,5 +93,6 @@ public class SaveData
         smallSDefeated = 0;
         mediumSDefeated = 0;
         largeSDefeated = 0;
+        endlessPlayed = 0;
 }
 }

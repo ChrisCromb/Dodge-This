@@ -21,6 +21,7 @@ public class LevelData : MonoBehaviour
     public float[,] selectedDataC;
 
     public bool randomSide = false;
+    public bool randomPath = false;
 
     // PATHS: A:1, B:2, C:3, D:4, E:5, F:6
 
@@ -68,6 +69,7 @@ public class LevelData : MonoBehaviour
             activeR = true;
             activeC = false;
             randomSide = true;
+            randomPath = true;
             selectedLevel = 0;
         }
         else if (levelNum == 1)
@@ -83,6 +85,7 @@ public class LevelData : MonoBehaviour
             activeR = true;
             activeC = false;
             randomSide = false;
+            randomPath = false;
             selectedLevel = 1;
         }
         else if(levelNum == 2)
@@ -98,6 +101,7 @@ public class LevelData : MonoBehaviour
             activeR = true;
             activeC = false;
             randomSide = false;
+            randomPath = false;
             selectedLevel = 2;
         }
         else if (levelNum == 3)
@@ -113,6 +117,7 @@ public class LevelData : MonoBehaviour
             activeR = true;
             activeC = false;
             randomSide = false;
+            randomPath = false;
             selectedLevel = 3;
         }
         else if (levelNum == 4)
@@ -128,6 +133,7 @@ public class LevelData : MonoBehaviour
             activeR = true;
             activeC = false;
             randomSide = false;
+            randomPath = false;
             selectedLevel = 4;
         }
         else if (levelNum == 5)
@@ -143,6 +149,7 @@ public class LevelData : MonoBehaviour
             activeR = true;
             activeC = false;
             randomSide = false;
+            randomPath = false;
             selectedLevel = 5;
         }
         else if (levelNum == 6)
@@ -158,6 +165,7 @@ public class LevelData : MonoBehaviour
             activeR = true;
             activeC = false;
             randomSide = false;
+            randomPath = false;
             selectedLevel = 6;
         }
         else if (levelNum == 7)
@@ -173,6 +181,7 @@ public class LevelData : MonoBehaviour
             activeR = true;
             activeC = false;
             randomSide = false;
+            randomPath = false;
             selectedLevel = 7;
         }
         else if (levelNum == 8)
@@ -188,6 +197,7 @@ public class LevelData : MonoBehaviour
             activeR = true;
             activeC = false;
             randomSide = false;
+            randomPath = false;
             selectedLevel = 8;
         }
         else if (levelNum == 9)
@@ -203,6 +213,7 @@ public class LevelData : MonoBehaviour
             activeR = true;
             activeC = true;
             randomSide = false;
+            randomPath = false;
             selectedLevel = 9;
         }
     }

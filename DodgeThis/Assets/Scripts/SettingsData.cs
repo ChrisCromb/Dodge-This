@@ -34,6 +34,8 @@ public class SettingsData : MonoBehaviour
     public int mediumSDefeated = 0;
     public int largeSDefeated = 0;
 
+    public int endlessPlayed = 0;
+
     //SKIN 0: DEFAULT;   SKIN 1: BEAT THE BOSS OF LEVEL 9;   SKIN 2: GET A SCORE OF OVER 2000 IN ENDLESS;    SKIN 3: GET A SCORE OF OVER 4000 IN ENDLESS;
     //SKIN 4: GET A SCORE OF OVER 6000 IN ENDLESS;   SKIN 5: GET A SCORE OF OVER 8000 IN ENDLESS;   SKIN 6: GET A SCORE OF OVER 10000 IN ENDLESS;    SKIN 7: DEFEAT 50 SMALL SHIPS IN ENDLESS;
     //SKIN 8: DEFEAT 50 MEDIUM SHIPS IN ENDLESS;   SKIN 9: DEFEAT 50 LARGE SHIPS IN ENDLESS;   SKIN 10: DEFEAT 100 SMALL SHIPS IN ENDLESS;   SKIN 11: DEFEAT 100 MEDIUM SHIPS IN ENDLESS;
@@ -148,6 +150,8 @@ public class SettingsData : MonoBehaviour
                 musicSlider.value = musicVol;
                 sfxSlider.value = sfxVol;
                 menuMusic = FindObjectOfType<AudioSource>();
+                FindObjectOfType<MenuControl>().SetSprite(skinSelected);
+                FindObjectOfType<MenuControl>().SetTrail(trailSelected);
                 newScene = false;
                 updateSettings = false;
             }
@@ -239,6 +243,7 @@ public class SettingsData : MonoBehaviour
             SettingsData sd = this.GetComponent<SettingsData>();
             SaveSystem.SaveGame(highscore, unlockedLevel, sd);
             LoadGame();
+
             foreach(LevelUnlock lU in FindObjectsOfType<LevelUnlock>())
             {
                 LoadUnlocks(lU);
@@ -274,6 +279,7 @@ public class SettingsData : MonoBehaviour
         smallSDefeated = data.smallSDefeated;
         mediumSDefeated = data.mediumSDefeated;
         largeSDefeated = data.largeSDefeated;
+        endlessPlayed = data.endlessPlayed;
 
     //Debug.Log("New Highscore: " + highscore);
     //Debug.Log("New Unlocked Level: " + unlockedLevel);

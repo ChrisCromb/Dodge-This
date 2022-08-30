@@ -93,11 +93,11 @@ MonoBehaviour:
   - {fileID: 110378078871949325, guid: e3c0ecc3de221ff459dc9a5153ff0cea, type: 3}
   - {fileID: 110378078871949325, guid: fafed9935326d1b4bbe8d8830802e50f, type: 3}
   - {fileID: 5760776169337275583, guid: 6172e8582ffba094384301e0f01211ac, type: 3}
+  - {fileID: 5760776169337275583, guid: 6f2be76dbb16724488f165b2ef382ec7, type: 3}
   - {fileID: 2525634359359120742, guid: 85f21a10590198b43b8d51886d7f1a20, type: 3}
-  - {fileID: 2525634359359120742, guid: 85f21a10590198b43b8d51886d7f1a20, type: 3}
-  - {fileID: 2525634359359120742, guid: 85f21a10590198b43b8d51886d7f1a20, type: 3}
-  - {fileID: 2525634359359120742, guid: 85f21a10590198b43b8d51886d7f1a20, type: 3}
-  - {fileID: 2525634359359120742, guid: 85f21a10590198b43b8d51886d7f1a20, type: 3}
+  - {fileID: 5760776169337275583, guid: 27187bf5e1e4ad24fba9549256b46ffa, type: 3}
+  - {fileID: 5760776169337275583, guid: 1162832a2d2c5d947afcb1b3086c2c08, type: 3}
+  - {fileID: 5760776169337275583, guid: fd7296de8a08d9347ad4538bc91473a2, type: 3}
   - {fileID: 2525634359359120742, guid: 85f21a10590198b43b8d51886d7f1a20, type: 3}
   - {fileID: 2525634359359120742, guid: 85f21a10590198b43b8d51886d7f1a20, type: 3}
   - {fileID: 2525634359359120742, guid: 85f21a10590198b43b8d51886d7f1a20, type: 3}
@@ -117,6 +117,7 @@ MonoBehaviour:
   smallSDefeated: 0
   mediumSDefeated: 0
   largeSDefeated: 0
+  endlessPlayed: 0
   highscoreText: {fileID: 0}
   levelUnlockedText: {fileID: 0}
   musicVolText: {fileID: 0}
@@ -143,3 +144,4 @@ MonoBehaviour:
   activeR: 0
   activeC: 0
   randomSide: 0
+  randomPath: 0

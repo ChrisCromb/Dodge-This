@@ -61,6 +61,7 @@ public class PlayerHealth : MonoBehaviour
         {
             GameObject x = Instantiate(explosion, transform.position, transform.rotation);
             x.GetComponent<AudioSource>().volume = FindObjectOfType<SettingsData>().sfxVol;
+            bool ePlayed = false;
             foreach(EnemySpawner eS in FindObjectsOfType<EnemySpawner>())
             {
                 if(eS.win == false && eS.lose == false)
@@ -73,6 +74,11 @@ public class PlayerHealth : MonoBehaviour
                         highScorePopup.gameObject.SetActive(true);
                         UIController uIC = FindObjectOfType<UIController>();
                         SettingsData sD = FindObjectOfType<SettingsData>();
+                        if(ePlayed == false)
+                        {
+                            sD.endlessPlayed++;
+                            ePlayed = true;
+                        }                        
 
                         if (uIC.score >= 2000 && sD.skinsUnlocked[2] == false)
                         {
@@ -135,7 +141,7 @@ public class PlayerHealth : MonoBehaviour
                     FindObjectOfType<UIController>().scoreText.fontSizeMax = 500;
                 }
             }
-            
+
             Destroy(gameObject);
         }
     }

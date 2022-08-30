@@ -47,6 +47,8 @@ public class MenuControl : MonoBehaviour
             trailsPage2 = trailsPage.transform.Find("TrailsPage2").gameObject;
             trailsPage3 = trailsPage.transform.Find("TrailsPage3").gameObject;
             hiddenButton = GameObject.Find("HiddenButton");
+            SetSprite(sD.skinSelected);
+            SetTrail(sD.trailSelected);
         }
     }
 
@@ -88,6 +90,10 @@ public class MenuControl : MonoBehaviour
     {
         popup.SetActive(!popup.activeInHierarchy);
     }
+    public void PopupMenuOff(GameObject popup)
+    {
+        popup.SetActive(false);
+    }
 
     public void UnlocksMenuSwitch(string main)
     {
@@ -112,10 +118,35 @@ public class MenuControl : MonoBehaviour
     public void SetSprite(int spriteNum)
     {
         sD.skinSelected = spriteNum;
+        try
+        {
+            Debug.Log("Set sprite");
+            GameObject.Find("PlayerSprite").GetComponent<SpriteRenderer>().sprite = sD.shipSprites[sD.skinSelected];
+        }
+        catch { }
     }
     public void SetTrail(int trailNum)
     {
         sD.trailSelected = trailNum;
+        try
+        {
+            Debug.Log("Set trail");
+            Destroy(GameObject.Find("Player").transform.GetChild(2).gameObject); 
+            GameObject trail = Instantiate(sD.shipTrails[sD.trailSelected], GameObject.Find("Player").transform);
+            if (sD.trailSelected == 18)
+            {
+                trail.GetComponent<ParticleSystemRenderer>().material = FindObjectOfType<SettingsData>().shipMaterials[0];
+                var m = trail.GetComponent<ParticleSystem>().main;
+                m.startSize = 0.2f;
+            }
+            if (sD.trailSelected == 19)
+            {
+                trail.GetComponent<ParticleSystemRenderer>().material = FindObjectOfType<SettingsData>().shipMaterials[1];
+                var m = trail.GetComponent<ParticleSystem>().main;
+                m.startSize = 0.25f;
+            }
+        }
+        catch { }
     }
 
     public void SaveCustomise()

@@ -41,6 +41,10 @@ public class EnemySpawnerManager : MonoBehaviour
             if ((L == false || (L == true && spawnerL.win == true)) && (C == false || (C == true && spawnerC.win == true)) && (R == false || (R == true && spawnerR.win == true)))
             {
                 youWinPopup.SetActive(true);
+                if(FindObjectOfType<LevelData>().selectedLevel == 9)
+                {
+                    youWinPopup.transform.GetChild(3).gameObject.SetActive(false);
+                }
                 FindObjectOfType<UIController>().scoreText.fontSizeMax = 500;
                 if(FindObjectOfType<LevelData>().selectedLevel == 9 && FindObjectOfType<SettingsData>().skinsUnlocked[1] == false)
                 {

@@ -66,7 +66,14 @@ public class PowerUp : MonoBehaviour
 
             if (power == 2) //Upgrade the amount of bullets shot per second
             {
-                collision.gameObject.GetComponent<PlayerShooting>().shootSpeed -= 0.025f;
+                if(collision.gameObject.GetComponent<PlayerShooting>().shootSpeed <= 0.025)
+                {
+                    collision.gameObject.GetComponent<PlayerShooting>().shootSpeed /= 2;
+                }
+                else 
+                {
+                    collision.gameObject.GetComponent<PlayerShooting>().shootSpeed -= 0.025f;
+                }
             }
 
             if (power == 3) //Upgrade the movement speed of bullets

@@ -21,9 +21,11 @@ public class EnemyStats : MonoBehaviour
 
     void Awake()
     {
+        int healthMultiplier = FindObjectOfType<UIController>().score / 2000;
+        enemyMaxHealth *= (healthMultiplier + 1);
         enemyCurHealth = enemyMaxHealth;
         //eHealthBar = FindObjectOfType<Slider>();
-        eHealthBar.maxValue = enemyMaxHealth;  
+        eHealthBar.maxValue = enemyMaxHealth;
     }
 
     void Update()

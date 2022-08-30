@@ -25,6 +25,7 @@ public class EnemySpawner : MonoBehaviour
 
     public bool endlessMode = false;
     public bool randomSide = false;
+    public bool randomPath = true;
     public bool active = false;
     int endlessTracker = 1;
 
@@ -88,7 +89,7 @@ public class EnemySpawner : MonoBehaviour
             movementSmall = Random.Range(4, 5);
             movementMedium = Random.Range(1, 3);
             movementLarge = Random.Range(1, 2);
-            Debug.Log("s:" + movementSmall + " m:" + movementMedium + " l:" + movementLarge);
+            //Debug.Log("s:" + movementSmall + " m:" + movementMedium + " l:" + movementLarge);
         }
         else if (gameObject.name == "EnemySpawnerRight")
         {
@@ -217,6 +218,11 @@ public class EnemySpawner : MonoBehaviour
         if (endlessMode)
         {
             timer += Time.deltaTime * timeFactor;
+            if(timer < 0 && FindObjectOfType<EnemyStats>() == null)
+            {
+                //Debug.Log("Reset timer to 0");
+                timer = 0;
+            }
             if (timer >= 5)
             {
                 int counter = 0;
@@ -249,17 +255,20 @@ public class EnemySpawner : MonoBehaviour
                     {
                        e.GetComponent<EnemyMovement>().mirrored = true;
                     }
-                    if(e.GetComponent<EnemyStats>().enemyType == "small")
+                    if (randomPath)
                     {
-                        e.GetComponent<EnemyMovement>().SetPath(paths[movementSmall - 1], movementSmall);
-                    }
-                    else if (e.GetComponent<EnemyStats>().enemyType == "medium")
-                    {
-                        e.GetComponent<EnemyMovement>().SetPath(paths[movementMedium - 1], movementMedium);
-                    }
-                    else if (e.GetComponent<EnemyStats>().enemyType == "large")
-                    {
-                        e.GetComponent<EnemyMovement>().SetPath(paths[movementLarge - 1], movementLarge);
+                        if (e.GetComponent<EnemyStats>().enemyType == "small")
+                        {
+                            e.GetComponent<EnemyMovement>().SetPath(paths[movementSmall - 1], movementSmall);
+                        }
+                        else if (e.GetComponent<EnemyStats>().enemyType == "medium")
+                        {
+                            e.GetComponent<EnemyMovement>().SetPath(paths[movementMedium - 1], movementMedium);
+                        }
+                        else if (e.GetComponent<EnemyStats>().enemyType == "large")
+                        {
+                            e.GetComponent<EnemyMovement>().SetPath(paths[movementLarge - 1], movementLarge);
+                        }
                     }
                     counter++;
                 }
