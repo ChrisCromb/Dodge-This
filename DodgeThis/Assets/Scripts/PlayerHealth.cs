@@ -70,8 +70,11 @@ public class PlayerHealth : MonoBehaviour
                     gameOverPopup.SetActive(true);
                     if (eS.endlessMode)
                     {
-                        highScorePopup.text = "HIGHSCORE: " + FindObjectOfType<SettingsData>().highscore;
-                        highScorePopup.gameObject.SetActive(true);
+                        if (FindObjectOfType<LevelData>().selectedLevel == 0)
+                        {
+                            highScorePopup.text = "HIGHSCORE: " + FindObjectOfType<SettingsData>().highscore;
+                            highScorePopup.gameObject.SetActive(true);
+                        }
                         UIController uIC = FindObjectOfType<UIController>();
                         SettingsData sD = FindObjectOfType<SettingsData>();
                         if(ePlayed == false)
